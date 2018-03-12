@@ -23,7 +23,7 @@ EukRep -i metagenome.fa -o euk_contigs.fa
 ```
 
 ### Automated binning
-* This step is important for separating multiple eukaryotic genomes in your sample. Also very helpful for removing any  prokaryotic scaffolds from eukaryotic bins
+* This step is important for separating multiple eukaryotic genomes in your sample.
 * Requires per-scaffold coverage information
 
 Performed with CONCOCT:
