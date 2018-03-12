@@ -38,10 +38,12 @@ metabat -a euk_contig_cov.txt -i euk_contigs.fa -o bin -t 6
 ```
 
 ### Filtering by bin size
+* In order to miss as few Eukaroytic bins and scaffolds as possible, EukRep has a known false positive rate around 2%. 
+* We find it useful to filter out any bins smaller than either 3 Mbp at this stage. This filtering removes the majority of  false positives 
 
 ### Train GeneMark-ES
 ```
-perl /home/pwest/fungi_data/gene_prediction/gm_et_linux_64/gmes_petap/gmes_petap.pl --ES -min_contig 10000 --sequence bin_1.fa
+perl gmes_petap.pl --ES -min_contig 10000 --sequence bin_1.fa
 ```
 * the -min_contig option specifies the minimum length of a contig used to train the gene prediction model for your bin. You do not need every contig of your bin used, however training may fail if too little of your contigs are above the threshold. Many bins from metagenomes can be quite fragmented so this option may need to be adjusted.
 
