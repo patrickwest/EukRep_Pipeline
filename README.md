@@ -39,7 +39,7 @@ metabat -a euk_contig_cov.txt -i euk_contigs.fa -o bin -t 6
 
 ### Filtering by bin size
 * In order to miss as few Eukaroytic scaffolds as possible, EukRep has a known false positive rate around 2%. 
-* We find it useful to filter out any bins smaller than 2.5 Mbp at this stage. This filtering removes the majority of false positives. Especially useful if CONCOCT was used becuase CONCOCT will bin every scaffold, often generating many very small bins.
+* We find it useful to filter out any bins smaller than 2.5 Mbp at this stage. This filtering removes the majority of false positives. Especially useful if CONCOCT was used because CONCOCT will bin every scaffold, often generating many very small bins.
 
 ### Train GeneMark-ES
 ```
