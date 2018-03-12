@@ -23,7 +23,7 @@ EukRep -i metagenome.fa -o euk_contigs.fa
 ```
 
 ### Automated binning
-* This step is important for cases where there are multiple eukaryotic genomes in your sample. Also very helpful for removing any remaining prokaryotic scaffolds from eukaryotic bins
+* This step is important for separating multiple eukaryotic genomes in your sample. Also very helpful for removing any  prokaryotic scaffolds from eukaryotic bins
 * Requires per-scaffold coverage information
 
 Performed with CONCOCT:
@@ -38,8 +38,8 @@ metabat -a euk_contig_cov.txt -i euk_contigs.fa -o bin -t 6
 ```
 
 ### Filtering by bin size
-* In order to miss as few Eukaroytic bins and scaffolds as possible, EukRep has a known false positive rate around 2%. 
-* We find it useful to filter out any bins smaller than either 3 Mbp at this stage. This filtering removes the majority of  false positives 
+* In order to miss as few Eukaroytic scaffolds as possible, EukRep has a known false positive rate around 2%. 
+* We find it useful to filter out any bins smaller than 3 Mbp at this stage. This filtering removes the majority of false positives 
 
 ### Train GeneMark-ES
 ```
