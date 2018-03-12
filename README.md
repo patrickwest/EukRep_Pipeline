@@ -25,11 +25,11 @@ EukRep -i metagenome.fa -o euk_contigs.fa
 ### Automated binning
 * Perform automated binning on the predicted eukaryotic contigs. This step is important for cases where there are multiple eukaryotic genomes in your sample and to help remove remaining prokaryotic scaffolds from any eukaryotic bin
 * This step requires per-scaffold coverage information
-* Performed with CONCOCT
+Performed with CONCOCT:
 ```
 concoct --coverage_file euk_contig_cov.txt --composition_file euk_contigs.fa
 ```
-* Performed with metabat
+Performed with metabat:
 ```
 metabat -a euk_contig_cov.txt -i euk_contigs.fa -o bin -t 6
 ```
