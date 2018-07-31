@@ -60,8 +60,8 @@ maker -g bin_1.fa -c 6
 cd *.maker.output
 fasta_merge -d *_master_datastore_index.log -o bin_1
 ```
-* To improve your gene predictions further, MAKER is capable of incorporating homologous proteins from reference genomes of related organisms, transcriptomic evidence, and other ab initio gene predictors such as AUGUSTUS
-* For many metagenomic samples, performing ab initio gene predictions is the only available option but for obtaining the highest quality gene predictions it is best to use other evidence as well when available.  
+* To improve your gene predictions further, MAKER is capable of incorporating homologous proteins from reference genomes of related organisms, transcriptomic evidence, and other ab initio gene predictors such as AUGUSTUS. For obtaining high quality gene predictions, it is usually best to use as many of these lines of evidence as are available.
+* For many metagenomic samples, performing ab initio gene predictions may be the only available option.  
 
 
 ### Run BUSCO 
