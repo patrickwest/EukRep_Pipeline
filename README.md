@@ -47,7 +47,7 @@ perl gmes_petap.pl --ES -min_contig 10000 --sequence bin_1.fa
 ```
 * the -min_contig option specifies the minimum length of a contig used to train the gene prediction model for your bin. You do not need every contig of your bin used, however training may fail if too little of your contigs are above the threshold. Many bins from metagenomes can be quite fragmented so this option may need to be adjusted.
 
-### Run MAKER2 gene prediction
+### Predict genes using the trained GeneMark-ES model and MAKER2
 * MAKER uses control files. At a minimum, I suggest modifying them in the following way to use RepeatMasker and GeneMark-ES to predict genes:
 ```
 Within the 'maker_opts.ctl' file:
