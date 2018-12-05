@@ -21,6 +21,10 @@ Included is an example bash script, euk_pipeline.sh, that incorporates all of th
 ```
 EukRep -i metagenome.fa -o euk_contigs.fa 
 ```
+* If you have a highly complex or fragmented metagenome, I suggest lowering the minimum contig size 
+```
+EukRep -i metagenome.fa -o euk_contigs.fa --min 1000
+```
 
 ### Automated binning
 * This step is important for separating multiple eukaryotic genomes in your sample.
